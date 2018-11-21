@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta charset="UTF-8">
+	<title>Demo notificaciones push</title>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta name="robots" content="index, follow" />
+	<link rel="author" type="text/plain" href="css/humans.txt" />
+	<link rel="icon" type="image/png" href="img/favicon.png?v=2">
+	<link rel="shortcut icon" href="img/favicon.png">
+	
+	<!-- <link rel="stylesheet" href="" /> -->
+	<link rel="stylesheet" href="estilos/all.css">
+	<link rel="stylesheet" href="estilos/login.css">
+</head>
+<body>
+	<div class="login">
+		<div class="wrapper">
+			<div class="tCenter">
+				<div class="logo">
+					<img src="img/login/logo.png" alt="ITALIKA">
+				</div>
+				<div id="datos_login">
+						<div class="separador">
+							<p>Se realizan notificaciones push muy sencillas.</p>
+							<button class="btn primario" disabled id="btnNotificacionPush" >
+        Habilitar notificaciones push
+      </button>
+      <section class="subscription-details js-subscription-details is-invisible">
+      <p><code style="width:100px;" class="js-subscription-json"></code></pre>
+    </section>
+						</div><!-- /.separador -->
+		
+				
+					</div><!-- /#datos_login -->
+
+		
+			</div><!-- /.wrapper -->
+		</div><!-- /.wrapper -->
+	</div><!-- /.login -->
+	<div class="footer">
+		<div class="wrapper">
+			<!-- <div id="tel_call_center" class="col tLeft">
+				<div id="call_center">
+					<table>
+						<tr>
+							<td><img src="img/login/callcenter.png" alt="Call Center"></td>
+							<td>
+								<p>¿Necesitas ayuda? Llama al</p>
+								<p id="tel">01 800 4825452</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div> -->
+			<div class="col tCenter">
+				<ul class="paises">
+					<li><span id="mx" class="banderas actual"></span></li>
+					<li><span id="pa" class="banderas"></span></li>
+					<li><span id="gt" class="banderas"></span></li>
+					<li><span id="br" class="banderas"></span></li>
+					<li><span id="pe" class="banderas"></span></li>
+					<li><span id="hn" class="banderas"></span></li>
+					<li><span id="cr" class="banderas"></span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
+	<script src="js/webconfig.login.js" type="text/javascript"></script>
+	<script src="js/login.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+</html>

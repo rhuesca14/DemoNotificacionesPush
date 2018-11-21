@@ -1,0 +1,267 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+* {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto_Regular', arial;
+	font-size: 1em;
+	color: #777;
+	background-image: url('../img/login/background2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.tLeft { text-align: left; }
+.tCenter { text-align: center; }
+.tRight { text-align: right; }
+
+.wrapper {
+	width: 95%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/* + + + + + + + + + + + Login + + + + + + + + + + */
+div.login {
+	position: relative;
+	border-radius: 4px;
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+	padding: 25px 5px;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.30);
+	color: #FFF;
+
+
+	transition: all 0.25s linear;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+}
+div.login span.atras {
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top: 10px; right: 10px;
+}
+div.login div.logo {
+	margin-bottom: 5px;
+}
+div.login div.logo img {
+	width: 175px;
+}
+div.login div.separador {
+	padding: 5px 0;
+} 
+div.login div.separador p {
+	color: #E7E7E7;
+	font-size: 0.875em;
+}
+div.login div.separador label {
+	display: block;
+	margin-bottom: 5px;
+}
+/* + + + + + + + + + End Login + + + + + + + + + */
+
+/* + + + + + + + + + + Form + + + + + + + + + */
+select,
+input[type="text"], 
+input[type="password"] { 
+	display: block;
+    position: relative;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 5px 12px;
+	padding-left: 40px;
+	border: solid 1px #CCC;
+    border-radius: 4px;
+    line-height: 1.42857143em;
+    font-family: 'Roboto_Regular', arial;
+	font-size: 1em;
+	color: #777;
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    behavior: url("PIE.htc");
+}
+select {
+	padding-left: 12px;
+	height: 34px;
+}
+input[type="text"]:focus, 
+input[type="password"]:focus {
+	border-color: #66AFE9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+}
+input[type="submit"] {
+	outline: 0;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	margin: 20px auto 8px;
+	padding: 7px 27px;
+    font-family: 'Roboto_Regular', arial;
+    font-size: 1em;
+	border: solid 1px #E7E7E7;
+	border-radius: 4px;
+	color: #E7E7E7;
+	background: none;
+
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+
+	behavior: url("PIE.htc");
+}
+input[type="submit"]:hover {
+	color: #00FFFC;
+	border-color: #00FFFC;
+}
+
+input#usuario { background: #FFF url('../img/login/icoUsuario.png') no-repeat -1px center; }
+input#contrasena,
+input#contrasena_actual,
+input#contrasena_nueva,
+input#contrasena_confirm { background: #FFF url('../img/login/icoPassword.png') no-repeat -1px center; }
+
+a.form {
+	text-decoration: none;
+	color: #E7E7E7;
+
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+a.form:hover {
+	color: #00FFFC;
+}
+/* + + + + + + + + + End Form + + + + + + + + */
+
+
+div#recupera_tu_contrasena { display: none; }
+div#cambia_tu_contrasena { display: none; }
+
+/* + + + + + + + + + Footer + + + + + + + + */
+div.footer {
+	/*position: absolute;*/
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background: #00284d;
+	color: #F8F8F8;
+	font-size: 0.75em;
+	margin-top: 25px;
+}
+div.footer div.col {
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	padding: 8px 0;
+}
+div.footer div.col div#call_center {
+	display: inline-block;
+}
+div.footer div.col table td {
+	vertical-align: middle;
+}
+div.footer div.col table td p{
+	margin-left: 10px;
+}
+div.footer div.col table td p#tel {
+	font-size: 1.6666666667em;
+}
+div.footer div.col a#cotizador {
+	position: relative;
+	color: #F8F8F8;
+	text-decoration: none;
+	background: #D31145;
+	border: solid 1px #D31145;
+	border-radius: 4px;
+	padding: 9px 15px;
+
+	transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
+	-webkit-transition: color color 0.25s ease-in-out, border 0.25s ease-in-out;
+	-moz-transition: color color 0.25s ease-in-out, border 0.25s ease-in-out;
+	-o-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
+
+	behavior: url("PIE.htc");
+}
+div.footer div.col a#cotizador img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+div.footer div.col a#cotizador span {
+	font-size: 1.1666666667em;
+}
+div.footer div.col a#cotizador:hover {
+	color: #F8F8F8;
+	border-color: #F8F8F8;
+	background: transparent;
+}
+div.footer div.col ul.paises {
+	display: inline-block;
+}
+div.footer div.col ul.paises li {
+	display: inline-block;
+	vertical-align: middle;
+}
+div.footer div.col ul.paises li span {
+	cursor: pointer;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: transparent url('../img/login/banderas.png') no-repeat 0 0;
+	border-radius: 50%;
+
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+div.footer div.col ul.paises li span#mx { background-position: 0 		0; }
+div.footer div.col ul.paises li span#pa { background-position: -30px 	0; }
+div.footer div.col ul.paises li span#gt { background-position: -60px 	0; }
+div.footer div.col ul.paises li span#br { background-position: -90px 	0; }
+div.footer div.col ul.paises li span#pe { background-position: -120px 	0; }
+div.footer div.col ul.paises li span#hn { background-position: -150px 	0; }
+div.footer div.col ul.paises li span#cr { background-position: -180px 	0; }
+
+div.footer div.col ul.paises li span#mx:hover,
+div.footer div.col ul.paises li span#mx.actual 	{ background-position: 0 	-30px; }
+div.footer div.col ul.paises li span#pa:hover,
+div.footer div.col ul.paises li span#pa.actual 	{ background-position: -30px -30px; }
+div.footer div.col ul.paises li span#gt:hover,
+div.footer div.col ul.paises li span#gt.actual 	{ background-position: -60px -30px; }
+div.footer div.col ul.paises li span#br:hover,
+div.footer div.col ul.paises li span#br.actual 	{ background-position: -90px -30px; }
+div.footer div.col ul.paises li span#pe:hover,
+div.footer div.col ul.paises li span#pe.actual 	{ background-position: -120px -30px; }
+div.footer div.col ul.paises li span#hn:hover,
+div.footer div.col ul.paises li span#hn.actual 	{ background-position: -150px -30px; }
+div.footer div.col ul.paises li span#cr:hover,
+div.footer div.col ul.paises li span#cr.actual 	{ background-position: -180px -30px; }
+/* + + + + + + + + End Footer + + + + + + + + */
+
+@media screen and (max-width: 767px) {
+	div.footer div.col {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
